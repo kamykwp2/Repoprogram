@@ -7,7 +7,10 @@ int main()
 default_random_engine generator;
 uniform_int_distribution<int> distribution(1,6);
 int kostka = distribution(generator);
-return kostka;
+
+    for(int i =0, i<10, i++)
+        cout << kostka;
+    return 0;
 
 
 }
