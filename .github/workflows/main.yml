@@ -1,0 +1,6 @@
+on: [push,pull_request]
+jobs:
+  manaam:
+    steps:
+      - run: echo hello world
+    runs-on: ubuntu-latest
