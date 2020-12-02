@@ -3,6 +3,9 @@ jobs:
   manaam:
     steps:
       - run: echo hello world
+      - uses: actions/checkout@v2
+      - run: g++ -o main 02.12.cpp
+      - run: ./main
     runs-on: ${{matrix.platform}}
     strategy:
       matrix:
