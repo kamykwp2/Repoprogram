@@ -2,7 +2,7 @@ on: [push,pull_request]
 jobs:
   manaam:
     steps:
-      - run: echo hello world
+      - run: echo Hello world
       - uses: actions/checkout@v2
       - run: g++ -o main kart02.12.cpp
       - run: ./main
